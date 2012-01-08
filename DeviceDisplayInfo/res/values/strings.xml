@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">See the Toast Message</string>
+    <string name="app_name">Device Display Info</string>
+
+    <array name="testArray">
+        <item>TestItem</item>
+        <item>@drawable/icon</item>
+    </array>
+
+
+    <array name="testArray1">
+        <item>TestItem1</item>
+        <item>@drawable/icon</item>
+    </array>
+
+
+    <array name="recipePluses">
+        <item>@array/testArray</item>
+        <item>@array/testArray1</item>
+    </array>
+
+</resources>
+ 

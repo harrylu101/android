@@ -1,0 +1,14 @@
+package com.myor.c2dm.model;
+
+public class CertificateInfo {
+	private String certPass;
+
+	public String getCertPass() {
+		return certPass;
+	}
+
+	public void setCertPass(String certPass) {
+		this.certPass = certPass;
+	}
+
+}

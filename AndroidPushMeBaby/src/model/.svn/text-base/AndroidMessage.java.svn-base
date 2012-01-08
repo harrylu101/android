@@ -1,0 +1,59 @@
+/*
+ * $Author: makeurownrules $
+ * $Rev: 1314 $
+ *
+ * $Date: 2009-12-28 17:01:32 +1000 (Mon, 28 Dec 2009) $
+ *
+ * This code is Copyright (c) 2009-2010 messmo Pty. Ltd. All rights reserved.
+ */
+
+package com.myor.c2dm.model;
+
+import org.apache.commons.codec.DecoderException;
+import org.apache.commons.codec.binary.Hex;
+
+import java.io.UnsupportedEncodingException;
+import java.util.logging.Logger;
+
+/**
+ * User: Jonathan Garay <netmask@webtelmex.net.mx> Created: Apr 9, 2009 2:19:51
+ * PM
+ */
+public class AndroidMessage {
+
+	public static final byte COMMAND = 0;
+
+	private String registrationKey;
+	private String message;
+	private String authKey;
+
+	public String getAuthKey() {
+		return authKey;
+	}
+
+	public void setAuthKey(String authKey) {
+		this.authKey = authKey;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public AndroidMessage(String deviceToken, String message) {
+		this.registrationKey = deviceToken;
+		this.message = message;
+	}
+
+	public String getRegistrationKey() {
+		return registrationKey;
+	}
+
+	public void setRegistrationKey(String registrationKey) {
+		this.registrationKey = registrationKey;
+	}
+
+}
